@@ -28,37 +28,14 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 ```json
 {
-  "records": [
-    {
-      "id": "recONRzIUTuZ5lXaF",
-      "fields": {
-        "author": "Liz Yrineo",
-        "setup": "Why did the tomato turn red?",
-        "punchline": "Because it saw the salad dressing!"
-      },
-      "createdTime": "2020-11-30T16:03:09.000Z"
-    },
-    {
-      "id": "rec3oYZ5Tp0AIDsKe",
-      "fields": {
-        "author": "Rachel Moskowitz",
-        "setup": "What did the green grape say to the red grape?",
-        "punchline": "Breathe, idiot, breathe!"
-      },
-      "createdTime": "2020-11-30T16:03:09.000Z"
-    },
-    {
-      "id": "recA34tOaoE1IVeC1",
-      "fields": {
-        "author": "Gary Grant",
-        "setup": "How do you make holy water?",
-        "punchline": "You boil the hell out of it!"
-      },
-      "createdTime": "2020-11-30T16:03:09.000Z"
+    "id": "reclAzUAE3RPlSp8e",
+    "fields": {
+      "name": "Pico De Gallo",
+      "description": "New take on classic recipe",
+      "ingredients": "- 2 Roma tomatoes\n- 1 Large Hass Avocado\n- 1 Cilantro bunch\n- 1 Serrano pepper\n- 1/2 oz freshly squeezed lime\n- 1/2 White onion\n",
+      "steps": "1. Dice Roma tomatoes to small cubes.\n2. Chop cilantro finely\n3. Cut avocados in half and remove seed. Make sure they're cubed\n4. Grab onion and dice ...",
+      "Rating": 2
     }
-  ],
-  "offset": "recA34tOaoE1IVeC1"
-}
 ```
 
 ### MVP/PostMVP
