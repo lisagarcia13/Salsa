@@ -6,17 +6,17 @@ What's in the Salsa is an app that is built using React and Airtable. Users will
 
 ## Wireframes
 
-Homepage:
+Homepage: <img src= 'pictures/Screen Shot 2021-12-01 at 9.21.17 PM.png' alt= 'homepage wireframe'>
 
-Mobile Homepage:
+Mobile Homepage: <img src= 'pictures/Screen Shot 2021-12-01 at 9.26.45 PM.png' alt= 'mobile homepage'>
 
 Create Salsa: <img src = 'pictures/Screen Shot 2021-12-01 at 8.09.02 PM.png'  alt = 'create wireframe'>
 
 Create Mobile: <img src = 'pictures/Screen Shot 2021-12-01 at 9.02.17 PM.png' alt= 'mobile create'>
 
-Category: <img src = 'pictures/Screen Shot 2021-12-01 at 8.17.57 PM.png' alt = 'category wireframe'>
+Category: <img src = 'pictures/Screen Shot 2021-12-01 at 9.08.17 PM.png' alt = 'category wireframe'>
 
-Mobile Category:
+Mobile Category: <img src= 'pictures/Screen Shot 2021-12-01 at 9.13.30 PM.png' alt = 'mobile catergory'>
 
 ## Component Hierarchy
 
