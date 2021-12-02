@@ -70,6 +70,7 @@ Category/Mobile Category: <img src = 'pictures/Screen Shot 2021-12-01 at 9.08.17
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
 | Adding Form               |    H     |      3hrs      |     0hrs      |    0hrs     |
 | Working with API          |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Render Recipes            |    H     |      3hrs      |     0hrs      |    0hrs     |
 | Pseudocode                |    M     |      2hrs      |     0hrs      |    0hrs     |
 | CSS Homepgae              |    H     |      2hrs      |     0hrs      |    0hrs     |
 | CSS Mild/Medium/Hot       |    H     |      3hrs      |     0hrs      |    0hrs     |
@@ -77,10 +78,11 @@ Category/Mobile Category: <img src = 'pictures/Screen Shot 2021-12-01 at 9.08.17
 | NavBar                    |    H     |      3hrs      |     0hrs      |    0hrs     |
 | CSS NavBar                |    H     |      2hrs      |     0hrs      |    0hrs     |
 | Routing                   |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Component Library         |    H     |      3hrs      |     0hrs      |    0hrs     |
 | Routing cont.             |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Link                      |    H     |      2hrs      |     0hrs      |    0hrs     |
 | Button                    |    L     |      2hrs      |     0hrs      |    0hrs     |
-
-| Total | H | 6hrs | 0hrs | 0hrs |
+| Total                     |    H     |     36hrs      |     0hrs      |    0hrs     |
 
 ## SWOT Analysis
 
