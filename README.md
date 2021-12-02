@@ -24,8 +24,6 @@ Category/Mobile Category: <img src = 'pictures/Screen Shot 2021-12-01 at 9.08.17
 
 ## API and Data Sample
 
-Show us a snippet of JSON returned by your Airtable (you can find it under the API documentation) so we know you can access it and get the info you need. This **must** be properly formatted. An example is below:
-
 ```json
 {
     "id": "reclAzUAE3RPlSp8e",
@@ -42,7 +40,9 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 - Get and Post recipes utilizing Airtable
 - Render data on page
-- Users can create salsa recipes with
+- Users can create salsa recipes with a form
+- Salsa recipes can be found organzied under categories
+- App will be designed using a combination of flexbox, CSS, and a component library
 
 #### PostMVP
 
@@ -66,18 +66,36 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 ## Timeframes
 
-| Component        | Priority | Estimated Time | Time Invested | Actual Time |
-| ---------------- | :------: | :------------: | :-----------: | :---------: |
-| Adding Form      |    H     |      3hrs      |    3.5hrs     |   3.5hrs    |
-| Working with API |    H     |      3hrs      |    2.5hrs     |   2.5hrs    |
-| Total            |    H     |      6hrs      |     5hrs      |    5hrs     |
+| Component                 | Priority | Estimated Time | Time Invested | Actual Time |
+| ------------------------- | :------: | :------------: | :-----------: | :---------: |
+| Adding Form               |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Working with API          |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Pseudocode                |    M     |      2hrs      |     0hrs      |    0hrs     |
+| CSS Homepgae              |    H     |      2hrs      |     0hrs      |    0hrs     |
+| CSS Mild/Medium/Hot       |    H     |      3hrs      |     0hrs      |    0hrs     |
+| CSS Mild/Medium/Hot cont. |    H     |      2hrs      |     0hrs      |    0hrs     |
+| NavBar                    |    H     |      3hrs      |     0hrs      |    0hrs     |
+| CSS NavBar                |    H     |      2hrs      |     0hrs      |    0hrs     |
+| Routing                   |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Routing cont.             |    H     |      3hrs      |     0hrs      |    0hrs     |
+| Button                    |    L     |      2hrs      |     0hrs      |    0hrs     |
+
+| Total | H | 6hrs | 0hrs | 0hrs |
 
 ## SWOT Analysis
 
 ### Strengths:
 
+I feel much more confident going into this than I did in Unit 1.
+
 ### Weaknesses:
+
+My weakness would probably be the routing aspect and thinking of names for my code.
 
 ### Opportunities:
 
+I'm gonna use this week to cement my knowledge of React and look into using a component library to style my app.
+
 ### Threats:
+
+My biggest threat is me getting sidetracked or restarting my code because I want to make it better/more efficent.
