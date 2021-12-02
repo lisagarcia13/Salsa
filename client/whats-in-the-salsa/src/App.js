@@ -2,7 +2,8 @@ import './App.css';
 import { useState, useEffect } from 'react'
 import { getSalsa } from './services'
 import { Routes, Route } from 'react-router-dom'
-import NavBar from './components/NavBar';
+import NavBar from './components/NavBar'
+import Form from './components/Form'
 
 function App() {
 
@@ -21,7 +22,7 @@ function App() {
       <h1>What's in the Salsa? </h1>
       <Routes>
         <Route path = '/'/>
-        <Route path= '/create'/>
+        <Route path='/create' element={<Form />}/>
         <Route path ='/mild'/>
         <Route path='/medium' />
         <Route path ='/hot'/>
