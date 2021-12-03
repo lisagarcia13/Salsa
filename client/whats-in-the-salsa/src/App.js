@@ -4,6 +4,8 @@ import { getSalsa } from './services'
 import { Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Form from './components/Form'
+import Mild from './components/Mild'
+import BasicMenu from './components/BasicMenu';
 
 function App() {
 
@@ -18,12 +20,12 @@ function App() {
   }, [])
   return (
     <div className="App">
+      {/* <BasicMenu /> */}
       <NavBar />
-      <h1>What's in the Salsa? </h1>
       <Routes>
-        <Route path = '/'/>
+        <Route path='/' element={null}/>
         <Route path='/create' element={<Form />}/>
-        <Route path ='/mild'/>
+        <Route path='/mild' element={<Mild mild={salsa} /> }/>
         <Route path='/medium' />
         <Route path ='/hot'/>
       </Routes>
