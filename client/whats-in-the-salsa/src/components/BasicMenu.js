@@ -2,7 +2,8 @@ import * as React from 'react';
 import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
 
 export default function BasicMenu() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -33,15 +34,12 @@ export default function BasicMenu() {
         MenuListProps={{
           'aria-labelledby': 'basic-button',
         }}
+        
       >
         
-        <MenuItem onClick={handleClose}
-          sx={{
-      width: 300,
-    color: 'red',
-  }}>
+        <MenuItem onClick={handleClose} >
         <Link to='/'>Home</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to='/create'>Create Salsa</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to='/create' textDecoration='none'>Create Salsa</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link to='/mild'>Mild</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link to='/medium'>Medium</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link to='/hot'>Hot</Link></MenuItem>

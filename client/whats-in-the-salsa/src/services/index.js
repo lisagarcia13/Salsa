@@ -13,3 +13,8 @@ export const getSalsa = async () => {
   const res = await axios.get(BASE_URL, config)
   return res.data.records
 }
+
+export const postSalsa = async (body) => {
+  const res = await axios.post(BASE_URL, { fields: body }, config)
+  return res.data
+}

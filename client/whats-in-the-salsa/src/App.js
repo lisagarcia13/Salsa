@@ -4,8 +4,7 @@ import { getSalsa } from './services'
 import { Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Form from './components/Form'
-import Mild from './components/Mild'
-import BasicMenu from './components/BasicMenu';
+import Recipes from './components/Recipes'
 
 function App() {
 
@@ -20,14 +19,13 @@ function App() {
   }, [])
   return (
     <div className="App">
-      {/* <BasicMenu /> */}
       <NavBar />
       <Routes>
-        <Route path='/' element={null}/>
+        <Route path='/' element={<h2>Homepageeeee</h2>}/>
         <Route path='/create' element={<Form />}/>
-        <Route path='/mild' element={<Mild mild={salsa} /> }/>
-        <Route path='/medium' />
-        <Route path ='/hot'/>
+        <Route path='/mild' element={<Recipes recipes={salsa} /> }/>
+        <Route path='/medium' element={<h3>mediummmmm</h3>} />
+        <Route path ='/hot' element={<h3>hot</h3>}/>
       </Routes>
     </div>
   );
