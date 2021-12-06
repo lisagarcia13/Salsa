@@ -40,9 +40,9 @@ export default function BasicMenu() {
         <MenuItem onClick={handleClose} >
         <Link to='/'>Home</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link to='/create' textDecoration='none'>Create Salsa</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to='/mild'>Mild</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to='/medium'>Medium</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to='/hot'>Hot</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to='/mild/:id'>Mild</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to='/medium/:id'>Medium</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link to='/hot/:id'>Hot</Link></MenuItem>
       </Menu>
     </div>
   );

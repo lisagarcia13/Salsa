@@ -18,3 +18,8 @@ export const postSalsa = async (body) => {
   const res = await axios.post(BASE_URL, { fields: body }, config)
   return res.data
 }
+
+export const deleteSalsa = async (id) => {
+  const res = await axios.delete(`${BASE_URL}/${id}}`, config)
+  return res.data
+}

@@ -9,6 +9,7 @@ import Recipes from './components/Recipes'
 function App() {
 
   const [salsa, setSalsa] = useState([])
+  const [toggle, setToggle] = useState(false)
   
   useEffect(() => {
     const grabSalsa = async () => {
@@ -16,16 +17,16 @@ function App() {
       setSalsa(res)
     }
     grabSalsa()
-  }, [])
+  }, [toggle])
   return (
     <div className="App">
       <NavBar />
       <Routes>
         <Route path='/' element={<h2>Homepageeeee</h2>}/>
-        <Route path='/create' element={<Form />}/>
-        <Route path='/mild' element={<Recipes recipes={salsa} /> }/>
-        <Route path='/medium' element={<h3>mediummmmm</h3>} />
-        <Route path ='/hot' element={<h3>hot</h3>}/>
+        <Route path='/create' element={<Form setToggle={setToggle} />} />
+        <Route path='/mild/:id' element={<Recipes recipes={salsa} setToggle={setToggle} /> } />
+        <Route path='/medium/:id' element={<Recipes recipes={salsa} setToggle={setToggle} />} />
+        <Route path ='/hot/:id' element={<Recipes recipes={salsa} setToggle={setToggle} />}/>
       </Routes>
     </div>
   );
