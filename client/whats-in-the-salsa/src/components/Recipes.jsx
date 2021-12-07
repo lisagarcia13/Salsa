@@ -1,30 +1,27 @@
-import { deleteSalsa } from "../services"
+import { useParams } from "react-router-dom"
+
 
 export default function Recipes(props) {
-
-  const handleDelete = async () => {
-    const res = await deleteSalsa()
-    props.setToggle(prevToggle => !prevToggle)
-  }
-
+  const { level } = useParams()
+  
+  const salsaLevel = props.recipes.filter((recipe) => {
+    return recipe.fields.heat === level
+  })
 
   return (
     <div>
-      {props.recipes.map(recipe => (
+      {salsaLevel.map(recipe => (
         <div key={recipe.id}>
-        <h3>{recipe.fields.name}</h3>
+          <h3>{recipe.fields.name}</h3>
           <p>{recipe.fields.description}</p>
           <p>{recipe.fields.ingredients} </p>
           <p>Steps: {recipe.fields.steps}</p>
-          <h4>Spicy Rating: {recipe.fields.rating}</h4>
-          <button onClick={handleDelete}>Delete</button>
+          <h4>Spicy Rating: {recipe.fields.heat}</h4>
+          <button>DELETE</button>
         </div>
-        
+          
       ))}
-      
+        
     </div>
   )
 }
-
-
-// props.spicy === 3 && navigate '/mild'

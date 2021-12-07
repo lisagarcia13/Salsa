@@ -24,9 +24,7 @@ function App() {
       <Routes>
         <Route path='/' element={<h2>Homepageeeee</h2>}/>
         <Route path='/create' element={<Form setToggle={setToggle} />} />
-        <Route path='/mild/:id' element={<Recipes recipes={salsa} setToggle={setToggle} /> } />
-        <Route path='/medium/:id' element={<Recipes recipes={salsa} setToggle={setToggle} />} />
-        <Route path ='/hot/:id' element={<Recipes recipes={salsa} setToggle={setToggle} />}/>
+        <Route path='/heat/:level' element={<Recipes recipes={salsa} setToggle={setToggle}  /> } />
       </Routes>
     </div>
   );

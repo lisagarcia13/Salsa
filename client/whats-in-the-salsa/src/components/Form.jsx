@@ -8,7 +8,7 @@ export default function Form(props) {
   const [description, setDescription] = useState('')
   const [ingredients, setIngredients] = useState('')
   const [steps, setSteps] = useState('')
-  // const [rating, setRating] = useState('')
+  const [heat, setHeat] = useState('Mild')
   const navigate = useNavigate()
 
   // useEffect(() => [
@@ -21,7 +21,8 @@ export default function Form(props) {
       name,
       description,
       ingredients,
-      steps
+      steps,
+      heat
       
     }
     const res = await postSalsa(newSalsa)
@@ -46,14 +47,21 @@ export default function Form(props) {
       <input value={ingredients} type='text' onChange={(e) => setIngredients(e.target.value)} required></input>
       <br />
       <label> Steps: </label>
-        <input value={steps} placeholder='insert steps in order' type='text' onChange={(e) => setSteps(e.target.value)} required></input>
-      <br />
-      {/* <label> Spicy Rating: </label>
-      <input value={rating} type='number' onChange={(e) => setRating(e.target.valueAsNumber)}></input> */}
-        <button>Mild</button>
-        <button>Medium</button>
-        <button>Hot</button>
+        <input value={steps} placeholder='Insert steps in order' type='text' onChange={(e) => setSteps(e.target.value)} required></input>
         <br />
+
+      <div value={heat} onChange={(e) => setHeat(e.target.value)}>
+        <label> Mild: </label>
+        <input value= 'Mild' type='radio' checked={heat === 'Mild'}  ></input>
+        <br />
+        <label> Medium: </label>
+        <input value='Medium' type='radio' checked={heat === 'Medium'}  ></input>
+        <br />
+        <label> Hot: </label>
+        <input value='Hot' type='radio' checked={heat === 'Hot'}  ></input>
+        <br />
+        </div>
+
       <button>Submit</button>
       </form>
       </div>
