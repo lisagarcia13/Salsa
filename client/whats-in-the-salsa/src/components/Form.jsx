@@ -46,15 +46,15 @@ export default function Form(props) {
         <input value={steps} placeholder='Insert steps in order' type='text' onChange={(e) => setSteps(e.target.value)} required></input>
         <br />
 
-      <div value={heat} onChange={(e) => setHeat(e.target.value)}>
+      <div value={heat} >
         <label> Mild: </label>
-        <input value= 'Mild' type='radio' checked={heat === 'Mild'}  ></input>
+        <input value= 'Mild' type='radio' checked={heat === 'Mild'} onChange={(e) => setHeat(e.target.value)} ></input>
         <br />
         <label> Medium: </label>
-        <input value='Medium' type='radio' checked={heat === 'Medium'}  ></input>
+        <input value='Medium' type='radio' checked={heat === 'Medium'} onChange={(e) => setHeat(e.target.value)} ></input>
         <br />
         <label> Hot: </label>
-        <input value='Hot' type='radio' checked={heat === 'Hot'}  ></input>
+        <input value='Hot' type='radio' checked={heat === 'Hot'} onChange={(e) => setHeat(e.target.value)} ></input>
         <br />
         </div>
 
