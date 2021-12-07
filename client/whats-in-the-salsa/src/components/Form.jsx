@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState} from "react"
 import { postSalsa } from "../services"
 import { useNavigate } from "react-router"
 
@@ -11,9 +11,6 @@ export default function Form(props) {
   const [heat, setHeat] = useState('Mild')
   const navigate = useNavigate()
 
-  // useEffect(() => [
-
-  // ], [])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -32,7 +29,6 @@ export default function Form(props) {
     }
   }
 
- 
   return (
     <div>
     <h2>Add your Recipe!</h2>
