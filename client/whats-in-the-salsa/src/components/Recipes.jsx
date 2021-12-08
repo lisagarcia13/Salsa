@@ -17,7 +17,7 @@ export default function Recipes(props) {
           <p>{recipe.fields.ingredients} </p>
           <p>Steps: {recipe.fields.steps}</p>
           <h4>Spicy Rating: {recipe.fields.heat}</h4>
-          <button>DELETE</button>
+         
         </div>
           
       ))}

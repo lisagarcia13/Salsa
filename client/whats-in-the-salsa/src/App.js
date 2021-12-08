@@ -5,6 +5,8 @@ import { Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Form from './components/Form'
 import Recipes from './components/Recipes'
+import StickyFooter from './components/StickyFooter';
+import Homepage from './components/Homepage';
 
 function App() {
 
@@ -22,10 +24,11 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path='/' element={<h2>Homepageeeee</h2>}/>
+        <Route path='/' element={<Homepage />}/>
         <Route path='/create' element={<Form setToggle={setToggle} />} />
         <Route path='/heat/:level' element={<Recipes recipes={salsa} setToggle={setToggle}  /> } />
       </Routes>
+      <StickyFooter />
     </div>
   );
 }
