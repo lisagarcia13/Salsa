@@ -7,6 +7,9 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
+import Button from '@mui/material/Button'
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+
 
 
 export default function Form(props) {
@@ -81,9 +84,10 @@ export default function Form(props) {
     <FormControlLabel value='Hot' checked={heat === 'Hot'} control={<Radio />} label="Hot" />
   </RadioGroup>
 </FormControl>
+  <br />
+        <Button type='submit' variant="contained" endIcon={<MenuBookIcon />} >Submit</Button>
 
-      <button className='button'>Submit</button>
-      </form>
-      </div>
+  </form>
+</div>
   )
 }

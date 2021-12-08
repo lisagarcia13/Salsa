@@ -39,7 +39,7 @@ export default function BasicMenu() {
         
         <MenuItem onClick={handleClose} >
         <Link to='/'>Home</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to='/create' textDecoration='none'>Create Salsa</Link></MenuItem>
+        <MenuItem  onClick={handleClose}><Link to='/create'>Create Salsa</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link to='/heat/Mild'>Mild</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link to='/heat/Medium'>Medium</Link></MenuItem>
         <MenuItem onClick={handleClose}><Link to='/heat/Hot'>Hot</Link></MenuItem>
