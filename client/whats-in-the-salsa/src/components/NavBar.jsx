@@ -1,9 +1,14 @@
 import BasicMenu from './BasicMenu'
+import Typography from '@mui/material/Typography'
 
 export default function NavBar() {
   return (
     <div className='title'>
-      <h1>What's in the Salsa? </h1>
+      <Typography
+        variant='h2'
+      >
+        What's in the Salsa?
+      </Typography>
       <BasicMenu />
     </div>
   )
