@@ -7,6 +7,8 @@ import Form from './components/Form'
 import Recipes from './components/Recipes'
 import StickyFooter from './components/StickyFooter';
 import Homepage from './components/Homepage';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import {green} from '@mui/material/colors'
 
 function App() {
 
@@ -20,8 +22,19 @@ function App() {
     }
     grabSalsa()
   }, [toggle])
+
+  const theme = createTheme({
+    palette: { primary: green,
+      secondary: {
+        main: '#c5e1a5',
+      },
+    
+  }
+})
+
   return (
     <div className="App">
+      <ThemeProvider theme={theme}>
       <NavBar />
       <Routes>
         <Route path='/' element={<Homepage />}/>
@@ -29,6 +42,7 @@ function App() {
         <Route path='/heat/:level' element={<Recipes recipes={salsa} setToggle={setToggle}  /> } />
       </Routes>
       <StickyFooter />
+      </ThemeProvider>
     </div>
   );
 }

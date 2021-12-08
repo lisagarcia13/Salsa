@@ -9,8 +9,15 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import Button from '@mui/material/Button'
 import MenuBookIcon from '@mui/icons-material/MenuBook';
+import Typography from '@mui/material/Typography'
+import { makeStyles } from "@mui/styles";
 
 
+const useStyles = makeStyles({
+  field: {
+    marginTop: 20,
+  }
+})
 
 export default function Form(props) {
   const [name, setName] = useState('')
@@ -19,7 +26,7 @@ export default function Form(props) {
   const [steps, setSteps] = useState('')
   const [heat, setHeat] = useState('Mild')
   const navigate = useNavigate()
-
+  const classes = useStyles()
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -38,37 +45,28 @@ export default function Form(props) {
     }
   }
 
+
   return (
     <div>
-    <h2 className='form-title'>Add your Recipe!</h2>
+      <Typography
+        variant='h3'
+        marginTop={10}
+      >Add your Recipe!</Typography>
     <form className= 'form' onSubmit={handleSubmit}>
-      {/* <label>Name: </label>
-        <input value={name} type='text' onChange={(e) => setName(e.target.value)} required></input> */}
-        <TextField id="outlined-basic" label="Name" value={name} variant="outlined" size='small' onChange={(e) => setName(e.target.value)} required />
+        <TextField className={classes.field} id="outlined-basic" label="Name" value={name} variant="outlined" size='small' onChange={(e) => setName(e.target.value)} required />
       <br />
-      {/* <label> Description: </label>
-      <input value={description} type='text' onChange={(e) => setDescription(e.target.value)} required></input> */}
-         <TextField id="outlined-basic" label="Description" value={description} variant="outlined" onChange={(e) => setDescription(e.target.value)} required />
+        <TextField className={classes.field} id="outlined-basic" label="Description" value={description} variant="outlined" onChange={(e) => setDescription(e.target.value)} required />
       <br />
-      {/* <label> Ingredients: </label>
-      <input value={ingredients} type='text' onChange={(e) => setIngredients(e.target.value)} required></input> */}
-         <TextField id="outlined-basic" label="Ingredients" value={ingredients} variant="outlined" onChange={(e) => setIngredients(e.target.value)} multiline required />
+        <TextField className={classes.field} id="outlined-basic" label="Ingredients" value={ingredients} variant="outlined" onChange={(e) => setIngredients(e.target.value)}
+          multiline rows={4} required />
       <br />
-      {/* <label> Steps: </label>
-        <input value={steps} placeholder='Insert steps in order' type='text' onChange={(e) => setSteps(e.target.value)} required></input> */}
-        <TextField id="outlined-basic" label="Steps" value={steps} variant="outlined" onChange={(e) => setSteps(e.target.value)} multiline required />
+        <TextField className={classes.field} id="outlined-basic" label="Steps" value={steps} variant="outlined" onChange={(e) => setSteps(e.target.value)}
+          multiline rows={5} required />
         <br />
 
       {/* <div value={heat} >
         <label> Mild: </label>
         <input value= 'Mild' type='radio' checked={heat === 'Mild'} onChange={(e) => setHeat(e.target.value)} ></input>
-        <br />
-        <label> Medium: </label>
-        <input value='Medium' type='radio' checked={heat === 'Medium'} onChange={(e) => setHeat(e.target.value)} ></input>
-        <br />
-        <label> Hot: </label>
-        <input value='Hot' type='radio' checked={heat === 'Hot'} onChange={(e) => setHeat(e.target.value)} ></input>
-        <br />
         </div> */}
  <FormControl component="fieldset">
   <FormLabel component="legend"></FormLabel>

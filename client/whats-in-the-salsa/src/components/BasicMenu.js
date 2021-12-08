@@ -38,11 +38,11 @@ export default function BasicMenu() {
       >
         
         <MenuItem onClick={handleClose} >
-        <Link to='/'>Home</Link></MenuItem>
-        <MenuItem  onClick={handleClose}><Link to='/create'>Create Salsa</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to='/heat/Mild'>Mild</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to='/heat/Medium'>Medium</Link></MenuItem>
-        <MenuItem onClick={handleClose}><Link to='/heat/Hot'>Hot</Link></MenuItem>
+        <Link to='/' className='nav'>Home</Link></MenuItem>
+        <MenuItem  onClick={handleClose}><Link className='nav' to='/create'>Create Salsa</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link className='nav' to='/heat/Mild'>Mild</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link className='nav' to='/heat/Medium'>Medium</Link></MenuItem>
+        <MenuItem onClick={handleClose}><Link className='nav' to='/heat/Hot'>Hot</Link></MenuItem>
       </Menu>
     </div>
   );
