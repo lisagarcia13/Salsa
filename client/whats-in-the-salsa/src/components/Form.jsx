@@ -17,7 +17,6 @@ const useStyles = makeStyles({
   field: {
     marginTop: 20,
   }
-
 })
 
 export default function Form(props) {
@@ -55,15 +54,15 @@ export default function Form(props) {
         color='white'
       >Add your Recipe!</Typography>
     <form onSubmit={handleSubmit}>
-        <TextField className={classes.field} id="outlined-basic" label="Name" value={name} variant="outlined" size='small' onChange={(e) => setName(e.target.value)} required />
+        <TextField className={classes.field} id="outlined-basic" label="Name" value={name} variant="outlined" size='small' onChange={(e) => setName(e.target.value)} required focused />
       <br />
-        <TextField className={classes.field} id="outlined-basic" label="Description" value={description} variant="outlined" onChange={(e) => setDescription(e.target.value)} required />
+        <TextField className={classes.field} id="outlined-basic" label="Description" value={description} variant="outlined" onChange={(e) => setDescription(e.target.value)} required focused />
       <br />
         <TextField className={classes.field} id="outlined-basic" label="Ingredients" value={ingredients} variant="outlined" onChange={(e) => setIngredients(e.target.value)}
-          multiline rows={4} required />
+          multiline rows={4} required focused />
       <br />
         <TextField className={classes.field} id="outlined-basic" label="Steps" value={steps} variant="outlined" onChange={(e) => setSteps(e.target.value)}
-          multiline rows={5} required />
+          multiline rows={5} required focused />
         <br />
 <br />
 <FormControl component="fieldset">
@@ -75,7 +74,7 @@ export default function Form(props) {
     onChange={(e) => setHeat(e.target.value)}
     row={true}
   >
-    <FormControlLabel value='Mild' checked={heat === 'Mild'} control={<Radio />} label="Mild"  />
+    <FormControlLabel color='white' value='Mild' checked={heat === 'Mild'} control={<Radio />} label="Mild"  />
     <FormControlLabel value='Medium' checked={heat === 'Medium'} control={<Radio />} label="Medium" />
     <FormControlLabel value='Hot' checked={heat === 'Hot'} control={<Radio />} label="Hot" />
   </RadioGroup>
