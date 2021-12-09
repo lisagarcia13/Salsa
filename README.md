@@ -53,36 +53,36 @@ Category/Mobile Category: <img src = 'pictures/Screen Shot 2021-12-01 at 9.08.17
 
 ## Project Schedule
 
-| Day       | Deliverable                                        | Status     |
-| --------- | -------------------------------------------------- | ---------- |
-| Dec 01    | Prompt / Wireframes / Priority Matrix / Timeframes | Complete   |
-| Dec 02    | Project Approval/Work on Airtable                  | Incomplete |
-| Dec 03    | Setup Basic Framework/Link API                     | Incomplete |
-| Dec 04    | Pseudocode / Actual code                           | Incomplete |
-| Dec 05    | Work on Components                                 | Incomplete |
-| Dec 06    | Reach MVP                                          | Incomplete |
-| Dec 07/08 | CSS/Final Touches/Deployment                       | Incomplete |
-| Dec 09    | Presentation                                       | Incomplete |
+| Day       | Deliverable                                        | Status   |
+| --------- | -------------------------------------------------- | -------- |
+| Dec 01    | Prompt / Wireframes / Priority Matrix / Timeframes | Complete |
+| Dec 02    | Project Approval/Work on Airtable                  | Complete |
+| Dec 03    | Setup Basic Framework/Link API                     | Complete |
+| Dec 04    | Pseudocode / Actual code                           | Complete |
+| Dec 05    | Work on Components                                 | Complete |
+| Dec 06    | Reach MVP                                          | Complete |
+| Dec 07/08 | CSS/Final Touches/Deployment                       | Complete |
+| Dec 09    | Presentation                                       | Complete |
 
 ## Timeframes
 
 | Component                 | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------------- | :------: | :------------: | :-----------: | :---------: |
-| Adding Form               |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Working with API          |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Render Recipes            |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Pseudocode                |    M     |      2hrs      |     0hrs      |    0hrs     |
-| CSS Homepgae              |    H     |      2hrs      |     0hrs      |    0hrs     |
-| CSS Mild/Medium/Hot       |    H     |      3hrs      |     0hrs      |    0hrs     |
-| CSS Mild/Medium/Hot cont. |    H     |      2hrs      |     0hrs      |    0hrs     |
-| NavBar                    |    H     |      3hrs      |     0hrs      |    0hrs     |
-| CSS NavBar                |    H     |      2hrs      |     0hrs      |    0hrs     |
-| Routing                   |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Component Library         |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Routing cont.             |    H     |      3hrs      |     0hrs      |    0hrs     |
-| Link                      |    H     |      2hrs      |     0hrs      |    0hrs     |
-| Button                    |    L     |      2hrs      |     0hrs      |    0hrs     |
-| Total                     |    H     |     36hrs      |     0hrs      |    0hrs     |
+| Adding Form               |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Working with API          |    H     |      3hrs      |     2hrs      |    2hrs     |
+| Render Recipes            |    H     |      3hrs      |     3hrs      |    3hrs     |
+| Pseudocode                |    M     |      2hrs      |     2hrs      |    2hrs     |
+| CSS Homepgae              |    H     |      2hrs      |     1hrs      |    1hrs     |
+| CSS Mild/Medium/Hot       |    H     |      3hrs      |     3hrs      |    3hrs     |
+| CSS Mild/Medium/Hot cont. |    H     |      2hrs      |     2hrs      |    2hrs     |
+| NavBar                    |    H     |      3hrs      |     3hrs      |    3hrs     |
+| CSS NavBar                |    H     |      2hrs      |     1hrs      |    1hrs     |
+| Routing                   |    H     |      3hrs      |     4hrs      |    4hrs     |
+| Component Library         |    H     |      3hrs      |     5hrs      |    5hrs     |
+| Routing cont.             |    H     |      3hrs      |     1hrs      |    1hrs     |
+| Link                      |    H     |      2hrs      |     2hrs      |    2hrs     |
+| Button                    |    L     |      2hrs      |     2hrs      |    2hrs     |
+| Total                     |    H     |     36hrs      |     34hrs     |    34hrs    |
 
 ## SWOT Analysis
 
