@@ -51,6 +51,7 @@ export default function Form(props) {
       <Typography
         variant='h3'
         marginTop={10}
+        color='white'
       >Add your Recipe!</Typography>
     <form className= 'form' onSubmit={handleSubmit}>
         <TextField className={classes.field} id="outlined-basic" label="Name" value={name} variant="outlined" size='small' onChange={(e) => setName(e.target.value)} required />
@@ -63,13 +64,9 @@ export default function Form(props) {
         <TextField className={classes.field} id="outlined-basic" label="Steps" value={steps} variant="outlined" onChange={(e) => setSteps(e.target.value)}
           multiline rows={5} required />
         <br />
-
-      {/* <div value={heat} >
-        <label> Mild: </label>
-        <input value= 'Mild' type='radio' checked={heat === 'Mild'} onChange={(e) => setHeat(e.target.value)} ></input>
-        </div> */}
- <FormControl component="fieldset">
-  <FormLabel component="legend"></FormLabel>
+<br />
+<FormControl component="fieldset">
+  <FormLabel component="legend">Spicy Level:</FormLabel>
   <RadioGroup
     aria-label="gender"
     name="controlled-radio-buttons-group"
@@ -83,8 +80,7 @@ export default function Form(props) {
   </RadioGroup>
 </FormControl>
   <br />
-        <Button type='submit' variant="contained" endIcon={<MenuBookIcon />} >Submit</Button>
-
+        <Button type='submit' variant="contained" endIcon={<MenuBookIcon />}>Submit</Button>
   </form>
 </div>
   )

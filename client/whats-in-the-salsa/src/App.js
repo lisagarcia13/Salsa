@@ -8,7 +8,7 @@ import Recipes from './components/Recipes'
 import StickyFooter from './components/StickyFooter';
 import Homepage from './components/Homepage';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import {green} from '@mui/material/colors'
+import {red} from '@mui/material/colors'
 
 function App() {
 
@@ -24,7 +24,7 @@ function App() {
   }, [toggle])
 
   const theme = createTheme({
-    palette: { primary: green,
+    palette: { primary: red,
       secondary: {
         main: '#c5e1a5',
       },
