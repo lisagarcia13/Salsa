@@ -32,6 +32,7 @@
   border: radius 10px;
   background-color: #d3212c;
   color: whitesmoke;
+  border-color: whitesmoke;
 }
 
 .ingredients {
