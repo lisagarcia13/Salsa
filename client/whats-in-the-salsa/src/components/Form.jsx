@@ -17,6 +17,7 @@ const useStyles = makeStyles({
   field: {
     marginTop: 20,
   }
+
 })
 
 export default function Form(props) {
@@ -47,13 +48,13 @@ export default function Form(props) {
 
 
   return (
-    <div>
+    <div className='form'>
       <Typography
         variant='h3'
         marginTop={10}
         color='white'
       >Add your Recipe!</Typography>
-    <form className= 'form' onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
         <TextField className={classes.field} id="outlined-basic" label="Name" value={name} variant="outlined" size='small' onChange={(e) => setName(e.target.value)} required />
       <br />
         <TextField className={classes.field} id="outlined-basic" label="Description" value={description} variant="outlined" onChange={(e) => setDescription(e.target.value)} required />
@@ -66,7 +67,7 @@ export default function Form(props) {
         <br />
 <br />
 <FormControl component="fieldset">
-  <FormLabel component="legend">Spicy Level:</FormLabel>
+  <FormLabel component="legend" >Spicy Level:</FormLabel>
   <RadioGroup
     aria-label="gender"
     name="controlled-radio-buttons-group"
