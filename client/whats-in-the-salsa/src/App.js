@@ -26,9 +26,16 @@ function App() {
   const theme = createTheme({
     palette: {
       primary: {
-        main: '#d50000',
-        
-    }
+        main: '#d50000', 
+      },
+      breakpoints: {
+        values: {
+          xs: 0,
+          sm: 600,
+          md: 900,
+          lg: 1200,
+        }
+      }
       
     
   }

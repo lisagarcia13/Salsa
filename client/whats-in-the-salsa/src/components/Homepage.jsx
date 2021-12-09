@@ -8,7 +8,7 @@ export default function Homepage() {
     <div className='home'>
       <Typography variant='h3' >What makes up a perfect Salsa?</Typography>
       <br />
-      <img style={{ width: "600px" }} src="https://cdn.pixabay.com/photo/2015/03/06/23/35/pepper-662550_960_720.jpg" alt=""></img>
+      <img className='chiles' src="https://cdn.pixabay.com/photo/2015/03/06/23/35/pepper-662550_960_720.jpg" alt=""></img>
       <br />
       <div className="home-content">
         <br />

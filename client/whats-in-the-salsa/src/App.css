@@ -35,12 +35,15 @@
 }
 
 .ingredients {
-  /* display: flex;
-  flex-wrap: wrap; */
+  display: flex;
+  flex-wrap: wrap;
   width: 450px;
   white-space: pre-wrap;
-  text-align: left;
+  /* text-align: left; */
   margin-left: 20px;
+}
+.chiles {
+  width: 600px;
 }
 
 .steps {
@@ -54,4 +57,22 @@
 .home {
   color: whitesmoke;
   margin-top: 30px;
+}
+
+@media only screen and (max-width: 850px) {
+  .chiles {
+    width: 400px;
+  }
+  .recipe {
+    margin: 40px;
+    width: 300px;
+    overflow: scroll;
+  }
+  .ingredients {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+    white-space: pre-wrap;
+    margin-left: 10px;
+  }
 }
