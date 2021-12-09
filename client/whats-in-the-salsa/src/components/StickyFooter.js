@@ -8,8 +8,8 @@ import Link from '@mui/material/Link';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary">
-      <Link color="inherit" href="https://github.com/lisagarcia13">
+    <Typography variant="body2" color="white">
+      <Link color="inherit" href="https://github.com/lisagarcia13" textDecoration='none'>
         GitHub
       </Link>{' '}
       <Link color="inherit" href="https://www.linkedin.com/in/lisa-garcia-4028a4221/">
@@ -36,7 +36,8 @@ export default function StickyFooter() {
           py: 3,
           px: 2,
           mt: 'auto',
-          backgroundColor: '#d50000'
+          backgroundColor: '#d50000',
+          color: 'whitesmoke'
         }}
       >
         <Container maxWidth="sm">
